@@ -11,21 +11,21 @@ import org.junit.jupiter.api.Test;
 
 public class AnagramServiceTest {
 
-    private AnagramService palyndromeService = new AnagramServiceImpl();
+    private AnagramService anagramService = new AnagramServiceImpl();
 
     @Test
     public void testIsTextAnagram() {
-	assertTrue(palyndromeService.isAnagram(buildInput("text extt")));
+	assertTrue(anagramService.isAnagram(buildInput("text extt")));
     }
 
     @Test
     public void testIsTextNotAnagram() {
-	assertFalse(palyndromeService.isAnagram(buildInput("text te")));
+	assertFalse(anagramService.isAnagram(buildInput("text te")));
     }
 
     @Test
     public void testIsStringAnagram() {
-	assertTrue(palyndromeService.isAnagram(buildInput("text")));
+	assertTrue(anagramService.isAnagram(buildInput("text")));
     }
 
     private Scanner buildInput(String s) {
