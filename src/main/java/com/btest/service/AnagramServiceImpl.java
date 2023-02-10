@@ -13,7 +13,7 @@ public class AnagramServiceImpl implements AnagramService {
 	while (input.hasNext()) {
 	    char[] word = input.next().toCharArray();
 	    Arrays.sort(word);
-	    anagrams.add(String.valueOf(word));
+	    anagrams.add(String.valueOf(word).toLowerCase());
 	}
 	return anagrams.size() == 1;
     }
